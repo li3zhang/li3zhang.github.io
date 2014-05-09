@@ -2510,3 +2510,10 @@ Webflow.define('ix', function ($, _) {
   // Export module
   return api;
 });
+/**
+ * ----------------------------------------------------------------------
+ * Webflow: Interactions: Init
+ */
+Webflow.require('ix').init([
+  {"slug":"new-interaction","name":"New Interaction","value":{"style":{},"triggers":[{"type":"hover","stepsA":[{"transition":"transform 500ms ease 0ms","scale":0.81}],"stepsB":[{"transition":"transform 500ms ease 0ms","scale":1}]}]}}
+]);
