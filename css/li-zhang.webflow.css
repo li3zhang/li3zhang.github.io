@@ -4,6 +4,9 @@ body {
   font-size: 12px;
   line-height: 20px;
 }
+a {
+  text-decoration:none;
+}
 h1 {
   display: block;
   margin-right: 0px;
@@ -52,7 +55,7 @@ p {
   display: block;
   margin-bottom: 5px;
   font-family: Bitter, serif;
-  color: #a1a1a1;
+  color: #757454;
   font-size: 15px;
   line-height: 23px;
 }
@@ -106,6 +109,12 @@ p {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #52baff;
+  
+}
+.section.blue {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #acdeff;
 }
 .hero-iphone {
   display: block;
