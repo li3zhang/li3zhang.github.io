@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>YTPlayer by Li</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+    <script src="ytplayer.js"></script>
+    <link rel="stylesheet" type="text/css" href="ytplayer.css">
+
+  </head>
+  <body>
+    <div class="row">
+  <div class="col-sm-10 col-sm-offset-1">
+    <h2>Billboard Hot 50</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-8">
+    <div id="player"></div>
+  </div>
+  <div class="col-sm-3 well">
+    <div class="row" id="controls">
+      <div class="col-sm-2">
+        <a href="#"><i class="fa fa-step-backward" id="prevvideo"></i></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="#"><i class="fa fa-pause" id="pausevideo"></i></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="#"><i class="fa fa-play" id="playvideo"></i></a>
+      </div>
+      <div class="col-sm-2">
+        <a href="#"><i class="fa fa-step-forward" id="nextvideo"></i></a>
+        </i></a>
+      </div>
+    </div>
+    <!--controls-->
+    <div class="row" id="listcontainer">
+      <ol id="playlist">
+      </ol>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

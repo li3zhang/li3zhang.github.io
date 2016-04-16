@@ -1,0 +1,14 @@
+#controls {
+  font-size:30px;
+}
+#player {
+  height:500px;
+}
+
+#listcontainer {
+  height:440px;
+  overflow-y:auto;
+}
+.listitem {
+  'list-style-type: none;
+}
