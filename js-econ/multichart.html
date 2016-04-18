@@ -9,54 +9,7 @@
     <script src="econ2.js"></script>
     <script src="multichart.js"></script>
     <script src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
-    <script>
-      $('document').ready(function() {
-        $( "#recalc" ).click(function(e) {
-          e.preventDefault();
-          dqi0 = 1.0*$('#dqi0').val();
-          dbfac0 = 1.0*$('#dbfac0').val();
-          ddec0 = 1.0*$('#ddec0').val();
-          dmindec0 = 1.0*$('#dmindec0').val();
-          dgor0 = 1.0*$('#dgor0').val();
-          ngshrink0 = 1.0*$('#ngshrink0').val();
-          ngyield0 = 1.0*$('#ngyield0').val();
-          Rwor0 = 1.0*$('#Rwor0').val();
-          intWRI = 0.01*$('#intWRI').val();
-          intNRI = 0.01*$('#intNRI').val();
-          taxOilSev = 0.001*$('#taxOilSev').val();
-          taxGasSev = 0.001*$('#taxGasSev').val();
-          taxConSev = taxOilSev;
-          taxAdVal = 0.001*$('#taxAdVal').val();
-          drillCompleteCost0 = 1000000.0*$('#drillCompleteCost0').val();
-          disposalCost0 = 1.0*$('#disposalCost0').val();
-          discountRate0 = 0.01*$('#discountRate0').val();
-          console.log([dqi0, dbfac0, ddec0, dmindec0, dgor0, timeinc0, startdate0, ngshrink0, ngyield0, Rwor0, intWRI, intNRI, taxOilSev, taxGasSev, taxConSev, taxAdVal, drillCompleteCost0, disposalCost0, discountRate0]);
-          var dec2 = makeDecline(dqi0, dbfac0, ddec0, dmindec0, dgor0, timeinc0, startdate0, ngshrink0, ngyield0, Rwor0, intWRI, intNRI, taxOilSev, taxGasSev, taxConSev, taxAdVal, drillCompleteCost0, disposalCost0, discountRate0);
-          returnAnnualIRR(dec2);
-          for (x in charts) {
-            charts[x].dataProvider = dec2;
-            charts[x].validateData();
-          }
-          zoomChart();
-
-        });
-
-        $('#decline-tab-link').click(function(e) {
-          $("#decline-tab").delay(100).fadeIn(100);
-          $("#financial-tab").fadeOut(100);
-          $('#financial-tab-link').removeClass('active');
-          $(this).addClass('active');
-          e.preventDefault();
-        });
-        $('#financial-tab-link').click(function(e) {
-          $("#financial-tab").delay(100).fadeIn(100);
-          $("#decline-tab").fadeOut(100);
-          $('#decline-tab-link').removeClass('active');
-          $(this).addClass('active');
-          e.preventDefault();
-        });
-        });
-    </script>
+    <script src="pagerender.js"></script>
 
   </head>
 
@@ -226,6 +179,12 @@
         <div id="chartdiv"></div>
         <div id="chartdiv2"></div>
         <div id="chartdiv3"></div>
+        <div>
+          <div class="col-sm-offset-3" id="econresults">
+          </div>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   </body>
