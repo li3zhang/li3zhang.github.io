@@ -1,1 +1,287 @@
-var _0xb7d7=["\x70\x6F\x77","\x6C\x6F\x67","\x65\x78\x70","\x72\x61\x74\x65\x4F\x69\x6C","\x63\x6F\x73\x74\x4F\x70\x65\x72\x61\x74\x69\x6E\x67\x4E\x65\x74","\x63\x6F\x73\x74\x4F\x70\x65\x72\x61\x74\x69\x6E\x67","\x72\x65\x76\x65\x6E\x75\x65\x47\x72\x6F\x73\x73\x4F\x69\x6C","\x70\x72\x69\x63\x65\x4F\x69\x6C","\x72\x65\x76\x65\x6E\x75\x65\x47\x72\x6F\x73\x73\x47\x61\x73","\x72\x61\x74\x65\x47\x61\x73\x53\x68\x72\x75\x6E\x6B","\x70\x72\x69\x63\x65\x47\x61\x73","\x72\x65\x76\x65\x6E\x75\x65\x47\x72\x6F\x73\x73\x43\x6F\x6E","\x72\x61\x74\x65\x43\x6F\x6E\x64\x65\x6E\x73\x61\x74\x65","\x72\x65\x76\x65\x6E\x75\x65\x4E\x65\x74\x4F\x69\x6C","\x72\x65\x76\x65\x6E\x75\x65\x4E\x65\x74\x47\x61\x73","\x72\x65\x76\x65\x6E\x75\x65\x4E\x65\x74\x43\x6F\x6E","\x72\x65\x76\x65\x6E\x75\x65\x4E\x65\x74\x54\x6F\x74\x61\x6C","\x63\x6F\x73\x74\x54\x6F\x74\x61\x6C","\x63\x6F\x73\x74\x44\x69\x73\x70\x6F\x73\x61\x6C\x4E\x65\x74","\x63\x66\x55\x6E\x64\x69\x73\x63\x42\x74\x61\x78","\x63\x66\x44\x69\x73\x63\x42\x74\x61\x78","\x74\x61\x78\x53\x65\x76\x65\x72\x61\x6E\x63\x65","\x74\x61\x78\x41\x64\x76\x61\x6C\x6F\x72\x65\x6D","\x63\x66\x55\x6E\x64\x69\x73\x63\x41\x74\x61\x78","\x63\x66\x44\x69\x73\x63\x41\x74\x61\x78","\x6C\x65\x6E\x67\x74\x68","\x61\x62\x73","\x64\x61\x74\x65","\x70\x72\x69\x63\x65","\x72\x6F\x75\x6E\x64","\x43\x61\x6C\x63\x75\x6C\x61\x74\x69\x6E\x67\x20\x52\x4F\x52\x20\x77\x69\x74\x68\x20","\x20\x64\x61\x79\x73\x20\x6F\x66\x20\x64\x61\x74\x61\x2E","\x6D\x61\x70","\x61\x70\x70\x6C\x79","\x66\x6C\x6F\x6F\x72","\x70\x75\x73\x68","\x67\x65\x74\x44\x61\x74\x65","\x73\x65\x74\x44\x61\x74\x65","\x66\x6F\x72\x6D\x61\x74\x4D\x6F\x6E\x65\x79","\x70\x72\x6F\x74\x6F\x74\x79\x70\x65","\x2E","\x2C","\x2D","","\x74\x6F\x46\x69\x78\x65\x64","\x73\x75\x62\x73\x74\x72","\x24\x31","\x72\x65\x70\x6C\x61\x63\x65","\x73\x6C\x69\x63\x65"];var dqi0=600;var dbfac0=1;var ddec0=0.60;var dmindec0=0.10;var dgor0=3000;var timeinc0=365;var startdate0= new Date(2016,3,1);var ngshrink0=0.05;var ngyield0=13;var Rwor0=3;var intWRI=0.95;var intNRI=0.875;var taxOilSev=0.046;var taxGasSev=0.075;var taxConSev=0.046;var taxAdVal=0.031;var drillCompleteCost0=7200000;var disposalCost0=3;var discountRate0=0.1;var priceOil=[{date: new Date(2000,1,1),price:35},{date: new Date(2016,3,1),price:38},{date: new Date(2017,3,1),price:40},{date: new Date(2050,1,1),price:72}];var priceGas=[{date: new Date(2000,1,1),price:1.8},{date: new Date(2016,1,1),price:2},{date: new Date(2016,4,1),price:2.5},{date: new Date(2016,8,1),price:2.8},{date: new Date(2016,12,1),price:4},{date: new Date(2018,1,1),price:5},{date: new Date(2050,1,1),price:5}];var priceOpcost=[{date: new Date(2000,1,1),price:10500},{date: new Date(2016,1,1),price:10500},{date: new Date(2016,4,1),price:7500},{date: new Date(2016,8,1),price:6000},{date: new Date(2016,12,1),price:3500},{date: new Date(2018,1,1),price:3500},{date: new Date(2050,1,1),price:3500}];var priceCapital=[{date: new Date(2000,1,1),price:0},{date: new Date(2016,1,1),price:1600},{date: new Date(2016,1,2),price:0},{date: new Date(2050,1,2),price:0}];function makeDecline(_0x8619x19,_0x8619x1a,_0x8619x1b,_0x8619x1c,_0x8619x1d,_0x8619x1e,_0x8619x1f,_0x8619x20,_0x8619x21,_0x8619x22,intWRI,intNRI,taxOilSev,taxGasSev,taxConSev,taxAdVal,_0x8619x23,_0x8619x24,_0x8619x25){cols=[];for(var _0x8619x26=0;_0x8619x26<10*365;_0x8619x26++){xyzrate=0;afac=(Math[_0xb7d7[0]]((1-_0x8619x1b),-1*_0x8619x1a)-1)/_0x8619x1a;afactime=afac*Math[_0xb7d7[0]]((1+_0x8619x1a*afac*(_0x8619x26/_0x8619x1e)),-1);deffect=1-Math[_0xb7d7[0]]((1+_0x8619x1a*afactime),(-1/_0x8619x1a));if(_0x8619x1a==0){dnoma=-Math[_0xb7d7[1]](1-_0x8619x1b);xyzrate=_0x8619x19*Math[_0xb7d7[2]](-1*dnoma*(_0x8619x26/_0x8619x1e))}else {dnoma=-Math[_0xb7d7[1]](1-_0x8619x1b);decexpon=(-1/_0x8619x1a);xyzrate=_0x8619x19*Math[_0xb7d7[0]]((1+_0x8619x1a*afac*(_0x8619x26/_0x8619x1e)),decexpon);if(deffect<_0x8619x1c){dnoma=-Math[_0xb7d7[1]](1-_0x8619x1c);xyzrate=(cols[_0x8619x26-1][_0xb7d7[3]])*Math[_0xb7d7[2]](-1*dnoma*(1/_0x8619x1e))}};cols[_0x8619x26]={time:_0x8619x26,timeN:_0x8619x26/_0x8619x1e,timeDT:addDays(_0x8619x1f,_0x8619x26),rateOil:xyzrate,rateGas:(_0x8619x1d/1000)*xyzrate,rateGasShrunk:(1-_0x8619x20)*(_0x8619x1d/1000)*xyzrate,rateCondensate:(_0x8619x21/1000)*(_0x8619x1d/1000)*xyzrate,rateWater:xyzrate*_0x8619x22,priceOil:makePrice(addDays(_0x8619x1f,_0x8619x26),priceOil),priceGas:makePrice(addDays(_0x8619x1f,_0x8619x26),priceGas),costDisposalNet:xyzrate*_0x8619x22*_0x8619x24*intWRI,costOperating:makePrice(addDays(_0x8619x1f,_0x8619x26),priceOpcost)/30};cols[_0x8619x26][_0xb7d7[4]]=cols[_0x8619x26][_0xb7d7[5]]*intWRI;cols[_0x8619x26][_0xb7d7[6]]=cols[_0x8619x26][_0xb7d7[3]]*cols[_0x8619x26][_0xb7d7[7]];cols[_0x8619x26][_0xb7d7[8]]=cols[_0x8619x26][_0xb7d7[9]]*cols[_0x8619x26][_0xb7d7[10]];cols[_0x8619x26][_0xb7d7[11]]=cols[_0x8619x26][_0xb7d7[12]]*cols[_0x8619x26][_0xb7d7[7]];cols[_0x8619x26][_0xb7d7[13]]=cols[_0x8619x26][_0xb7d7[6]]*intNRI;cols[_0x8619x26][_0xb7d7[14]]=cols[_0x8619x26][_0xb7d7[8]]*intNRI;cols[_0x8619x26][_0xb7d7[15]]=cols[_0x8619x26][_0xb7d7[11]]*intNRI;cols[_0x8619x26][_0xb7d7[16]]=cols[_0x8619x26][_0xb7d7[13]]+cols[_0x8619x26][_0xb7d7[14]]+cols[_0x8619x26][_0xb7d7[15]];cols[_0x8619x26][_0xb7d7[17]]=cols[_0x8619x26][_0xb7d7[18]]+cols[_0x8619x26][_0xb7d7[4]];cols[_0x8619x26][_0xb7d7[19]]=cols[_0x8619x26][_0xb7d7[16]]-cols[_0x8619x26][_0xb7d7[17]];cols[_0x8619x26][_0xb7d7[20]]=PV(_0x8619x25/_0x8619x1e,_0x8619x26,cols[_0x8619x26][_0xb7d7[19]]);cols[_0x8619x26][_0xb7d7[21]]=cols[_0x8619x26][_0xb7d7[13]]*taxOilSev+cols[_0x8619x26][_0xb7d7[14]]*taxGasSev+cols[_0x8619x26][_0xb7d7[15]]*taxConSev;cols[_0x8619x26][_0xb7d7[22]]=cols[_0x8619x26][_0xb7d7[16]]*taxAdVal;cols[_0x8619x26][_0xb7d7[23]]=cols[_0x8619x26][_0xb7d7[19]]-cols[_0x8619x26][_0xb7d7[21]]-cols[_0x8619x26][_0xb7d7[22]];cols[_0x8619x26][_0xb7d7[24]]=PV(_0x8619x25/_0x8619x1e,_0x8619x26,cols[_0x8619x26][_0xb7d7[23]])};cols[0][_0xb7d7[19]]-=_0x8619x23;cols[0][_0xb7d7[20]]-=_0x8619x23;cols[0][_0xb7d7[23]]-=_0x8619x23;cols[0][_0xb7d7[24]]-=_0x8619x23;return cols}function makePrice(_0x8619x28,_0x8619x29){var _0x8619x2a=_0x8619x29[_0xb7d7[25]];var _0x8619x2b=_0x8619x29[_0xb7d7[25]];var _0x8619x2c=Math[_0xb7d7[26]](( new Date(0,0,0)).valueOf());var _0x8619x2d=_0x8619x2c;var _0x8619x2e=-_0x8619x2c;var _0x8619x2f=0;var _0x8619x26;for(_0x8619x26=0;_0x8619x26<_0x8619x29[_0xb7d7[25]];_0x8619x26++){_0x8619x2f=_0x8619x28-_0x8619x29[_0x8619x26][_0xb7d7[27]];if(_0x8619x2f==0){_0x8619x2a=_0x8619x26;_0x8619x2b=_0x8619x26;break};if(_0x8619x2f<0&&_0x8619x2f>_0x8619x2e){_0x8619x2b=_0x8619x26;_0x8619x2e=_0x8619x2f};if(_0x8619x2f>0&&_0x8619x2f<_0x8619x2d){_0x8619x2a=_0x8619x26;_0x8619x2d=_0x8619x2f}};if(_0x8619x2a-_0x8619x2b==0){return _0x8619x29[_0x8619x2a][_0xb7d7[28]]};diffDaysTotal=Math[_0xb7d7[29]](Math[_0xb7d7[26]]((_0x8619x29[_0x8619x2a][_0xb7d7[27]]-_0x8619x29[_0x8619x2b][_0xb7d7[27]])/8.64e7));diffDaysInterm=Math[_0xb7d7[29]](Math[_0xb7d7[26]]((_0x8619x29[_0x8619x2a][_0xb7d7[27]]-_0x8619x28)/8.64e7));expPrice=_0x8619x29[_0x8619x2a][_0xb7d7[28]]+diffDaysInterm*(_0x8619x29[_0x8619x2b][_0xb7d7[28]]-_0x8619x29[_0x8619x2a][_0xb7d7[28]])/diffDaysTotal;return expPrice}function returnAnnualIRR(_0x8619x31){console[_0xb7d7[1]](_0xb7d7[30]+_0x8619x31[_0xb7d7[25]]+_0xb7d7[31]);cfdisctableBT=_0x8619x31[_0xb7d7[32]](function(_0x8619x32){return _0x8619x32[_0xb7d7[19]]});yearlyDiscBT=reduceAnnual(cfdisctableBT);btror=IRR[_0xb7d7[33]](this,yearlyDiscBT);cfdisctableAT=_0x8619x31[_0xb7d7[32]](function(_0x8619x32){return _0x8619x32[_0xb7d7[23]]});yearlyDiscAT=reduceAnnual(cfdisctableAT);atror=IRR[_0xb7d7[33]](this,yearlyDiscAT);return [btror*12,atror*12]}function PV(_0x8619x34,_0x8619x35,_0x8619x36){return _0x8619x36*1/(Math[_0xb7d7[0]](1+_0x8619x34,_0x8619x35))}function seekZero(_0x8619x38){var _0x8619x39=1;while(_0x8619x38(_0x8619x39)>0){_0x8619x39+=1};while(_0x8619x38(_0x8619x39)<0){_0x8619x39-=0.01};return _0x8619x39+0.01}function IRR(_0x8619x3b){var _0x8619x3c=arguments;function _0x8619x3d(_0x8619x34){var _0x8619x3e=(1+_0x8619x34/100);var _0x8619x3d=_0x8619x3c[0];for(var _0x8619x26=1;_0x8619x26<_0x8619x3c[_0xb7d7[25]];_0x8619x26++){_0x8619x3d+=(_0x8619x3c[_0x8619x26]/Math[_0xb7d7[0]](_0x8619x3e,_0x8619x26))};return _0x8619x3d}return (seekZero(_0x8619x3d)*100)/100}function NPV(_0x8619x3b){var _0x8619x40=0;cfdisctableBT=_0x8619x3b[_0xb7d7[32]](function(_0x8619x32){return _0x8619x32[_0xb7d7[20]]});for(var _0x8619x26=0;_0x8619x26<cfdisctableBT[_0xb7d7[25]];_0x8619x26++){_0x8619x40+=cfdisctableBT[_0x8619x26]};var _0x8619x41=0;cfdisctableAT=_0x8619x3b[_0xb7d7[32]](function(_0x8619x32){return _0x8619x32[_0xb7d7[24]]});for(var _0x8619x26=0;_0x8619x26<cfdisctableAT[_0xb7d7[25]];_0x8619x26++){_0x8619x41+=cfdisctableAT[_0x8619x26]};return [_0x8619x40,_0x8619x41]}function reduceAnnual(_0x8619x43){yearlyArr=[];reducetimes=Math[_0xb7d7[34]](_0x8619x43[_0xb7d7[25]]/30);for(var _0x8619x26=0;_0x8619x26<reducetimes;_0x8619x26++){yearlyVal=0;for(var _0x8619x44=0;_0x8619x44<30;_0x8619x44++){yearlyVal+=_0x8619x43[_0x8619x26*30+_0x8619x44]};yearlyArr[_0xb7d7[35]](yearlyVal)};return (yearlyArr)}function addDays(_0x8619x28,_0x8619x46){var _0x8619x47= new Date(_0x8619x28);_0x8619x47[_0xb7d7[37]](_0x8619x47[_0xb7d7[36]]()+_0x8619x46);return _0x8619x47}function printcols(_0x8619x49){for(var _0x8619x26=0;_0x8619x26<10;_0x8619x26++){console[_0xb7d7[1]](_0x8619x49[_0x8619x26])}}Number[_0xb7d7[39]][_0xb7d7[38]]=function(_0x8619x4a,_0x8619x4b,_0x8619x4c){var _0x8619x4d=this,_0x8619x4a=isNaN(_0x8619x4a=Math[_0xb7d7[26]](_0x8619x4a))?2:_0x8619x4a,_0x8619x4b=_0x8619x4b==undefined?_0xb7d7[40]:_0x8619x4b,_0x8619x4c=_0x8619x4c==undefined?_0xb7d7[41]:_0x8619x4c,_0x8619x4e=_0x8619x4d<0?_0xb7d7[42]:_0xb7d7[43],_0x8619x26=parseInt(_0x8619x4d=Math[_0xb7d7[26]](+_0x8619x4d||0)[_0xb7d7[44]](_0x8619x4a))+_0xb7d7[43],_0x8619x44=(_0x8619x44=_0x8619x26[_0xb7d7[25]])>3?_0x8619x44%3:0;return _0x8619x4e+(_0x8619x44?_0x8619x26[_0xb7d7[45]](0,_0x8619x44)+_0x8619x4c:_0xb7d7[43])+_0x8619x26[_0xb7d7[45]](_0x8619x44)[_0xb7d7[47]](/(\d{3})(?=\d)/g,_0xb7d7[46]+_0x8619x4c)+(_0x8619x4a?_0x8619x4b+Math[_0xb7d7[26]](_0x8619x4d-_0x8619x26)[_0xb7d7[44]](_0x8619x4a)[_0xb7d7[48]](2):_0xb7d7[43])}
+//initialize some defaults
+//decline variables
+var dqi0 = 600;
+var dbfac0 = 1;  //b factor 0-1
+var ddec0 = 0.60;  //decline exponent as decimal 1% - 100%
+var dmindec0 = .10;  //minimum decline
+var dgor0 = 3000;
+var timeinc0 = 365;
+var startdate0 = new Date(2016,0,0);
+var ngshrink0 = .05;
+var ngyield0 = 13;
+var Rwor0 = 3;
+
+//interests
+var intWRI = .95;
+var intNRI = 0.875;
+
+//taxes
+var taxOilSev = .046;
+var taxGasSev = .075;
+var taxConSev = .046;
+var taxAdVal = .031;
+
+//costs
+var drillCompleteCost0 = 7200000;
+var disposalCost0 = 3;
+
+//economic variables
+var discountRate0 = 0.1;
+
+var priceOil = [
+  {date:new Date(2000,1,1), price:40},
+  {date:new Date(2016,3,1), price:45},
+  {date:new Date(2017,3,1), price:65},
+  {date:new Date(2050,1,1), price:100}
+  ];
+
+var priceGas = [
+  {date:new Date(2000,1,1), price:1.8},
+  {date:new Date(2016,1,1), price:2},
+  {date:new Date(2016,4,1), price:2.5},
+  {date:new Date(2016,8,1), price:2.8},
+  {date:new Date(2016,12,1), price:4},
+  {date:new Date(2018,1,1), price:5},
+  {date:new Date(2050,1,1), price:5}
+  ];
+
+var priceOpcost = [
+  {date:new Date(2000,1,1), price:10500},
+  {date:new Date(2016,1,1), price:10500},
+  {date:new Date(2016,4,1), price:7500},
+  {date:new Date(2016,8,1), price:6000},
+  {date:new Date(2016,12,1), price:3500},
+  {date:new Date(2018,1,1), price:3500},
+  {date:new Date(2050,1,1), price:3500}
+  ];
+
+var priceCapital = [
+  {date:new Date(2000,1,1), price:0},
+  {date:new Date(2016,1,1), price:1600},
+  {date:new Date(2016,1,2), price:0},
+  {date:new Date(2050,1,2), price:0}
+  ];
+
+
+
+//var dec1 = makeDecline(dqi0, dbfac0, ddec0, dmindec0, dgor0, timeinc0, startdate0, ngshrink0, ngyield0, Rwor0, intWRI, intNRI, taxOilSev, taxGasSev, taxConSev, taxAdVal, drillCompleteCost0, disposalCost0, discountRate0);
+//printcols(dec1);
+//console.table(dec1, ['timeDT', 'rateOil', 'revenueNetTotal', 'costTotal' ,'cfUndiscBtax', 'cfDiscBtax', 'cfUndiscAtax', 'cfDiscAtax']);
+//console.table(dec1);
+//console.log(priceOil[1].date);
+//returnAnnualIRR(dec1);
+
+
+
+
+function makeDecline(dqi, dbfac, ddec, dmindec, dgor, timeinc, startdate, ngshrink, ngyield, Rwor, intWRI, intNRI, taxOilSev, taxGasSev, taxConSev, taxAdVal, drillCompleteCost, disposalCost, discountRate) {
+  cols = [];
+
+
+  //for (var i = 0; i < timeinc; i++) {
+  for (var i = 0; i < 10*365; i++) {
+
+
+    //this chunk of code does decline curve calculations and minimum decline rate logic
+    xyzrate = 0;
+    afac = (Math.pow((1-ddec),-1*dbfac)-1)/dbfac;
+    afactime = afac*Math.pow((1+dbfac*afac*(i/timeinc)),-1);
+    deffect = 1- Math.pow((1+dbfac*afactime),(-1/dbfac));
+
+    if (dbfac == 0) {
+      dnoma = -Math.log(1-ddec);
+      xyzrate = dqi*Math.exp(-1*dnoma*(i/timeinc));
+    }
+    else {
+      dnoma = -Math.log(1-ddec);
+      decexpon = (-1/dbfac);
+      xyzrate = dqi*Math.pow((1+dbfac*afac*(i/timeinc)),decexpon);
+      if (deffect < dmindec) {
+        dnoma = -Math.log(1-dmindec);
+        xyzrate = (cols[i-1].rateOil)*Math.exp(-1*dnoma*(1/timeinc));
+      }
+    }
+    //from here, xyzrate is the daily oil rate
+
+    cols[i] = {
+      time: i,
+      timeN: i/timeinc,
+      timeDT:addDays(startdate, i),
+      rateOil: xyzrate,
+      rateGas: (dgor/1000)*xyzrate,
+      rateGasShrunk: (1-ngshrink)*(dgor/1000)*xyzrate,
+      rateCondensate: (ngyield/1000)*(dgor/1000)*xyzrate,
+      rateWater: xyzrate*Rwor,
+      priceOil: makePrice(addDays(startdate, i), priceOil),
+      priceGas: makePrice(addDays(startdate, i), priceGas),
+      //costDisposal: xyzrate*Rwor*disposalCost,
+      costDisposalNet: xyzrate*Rwor*disposalCost*intWRI,
+      costOperating: makePrice(addDays(startdate, i), priceOpcost)/30
+    };
+    cols[i].costOperatingNet = cols[i].costOperating * intWRI;
+    cols[i].revenueGrossOil = cols[i].rateOil*cols[i].priceOil;
+    cols[i].revenueGrossGas = cols[i].rateGasShrunk*cols[i].priceGas;
+    cols[i].revenueGrossCon = cols[i].rateCondensate*cols[i].priceOil;
+    cols[i].revenueNetOil = cols[i].revenueGrossOil * intNRI;
+    cols[i].revenueNetGas = cols[i].revenueGrossGas * intNRI;
+    cols[i].revenueNetCon = cols[i].revenueGrossCon * intNRI;
+    cols[i].revenueNetTotal = cols[i].revenueNetOil + cols[i].revenueNetGas + cols[i].revenueNetCon;
+    cols[i].costTotal = cols[i].costDisposalNet + cols[i].costOperatingNet;
+    cols[i].cfUndiscBtax = cols[i].revenueNetTotal - cols[i].costTotal;
+    cols[i].cfDiscBtax = PV(discountRate/timeinc, i, cols[i].cfUndiscBtax);
+    cols[i].taxSeverance = cols[i].revenueNetOil * taxOilSev + cols[i].revenueNetGas * taxGasSev + cols[i].revenueNetCon * taxConSev;
+    cols[i].taxAdvalorem = cols[i].revenueNetTotal * taxAdVal;
+    cols[i].cfUndiscAtax = cols[i].cfUndiscBtax - cols[i].taxSeverance - cols[i].taxAdvalorem;
+    cols[i].cfDiscAtax = PV(discountRate/timeinc, i, cols[i].cfUndiscAtax);
+
+  }
+
+  //apply drill and complete costs
+  cols[0].cfUndiscBtax -= drillCompleteCost;
+  cols[0].cfDiscBtax -= drillCompleteCost;
+  cols[0].cfUndiscAtax -= drillCompleteCost;
+  cols[0].cfDiscAtax -= drillCompleteCost;
+  return cols;
+
+}
+
+
+
+function makePrice(date, priceDeck) {
+  //uses price deck provided to interpolate price at selected date.
+
+  var bestPrevDate = priceDeck.length;
+  var bestNextDate = priceDeck.length;
+
+  var max_date_value = Math.abs((new Date(0,0,0)).valueOf());
+  var bestPrevDiff = max_date_value;
+  var bestNextDiff = -max_date_value;
+
+  var currDiff = 0;
+  var i;
+
+  for (i = 0; i < priceDeck.length; i++) {
+    currDiff = date - priceDeck[i].date;
+    if(currDiff == 0) {
+      bestPrevDate = i;
+      bestNextDate = i;
+      break;
+    }
+    if(currDiff < 0 && currDiff > bestNextDiff) {
+      bestNextDate = i;
+      bestNextDiff = currDiff;
+    }
+    if(currDiff > 0 && currDiff < bestPrevDiff) {
+      bestPrevDate = i;
+      bestPrevDiff = currDiff;
+    }
+  }
+
+  if(bestPrevDate-bestNextDate == 0) {
+    return priceDeck[bestPrevDate].price;
+  }
+
+  diffDaysTotal = Math.round(Math.abs((priceDeck[bestPrevDate].date - priceDeck[bestNextDate].date)/8.64e7));
+  diffDaysInterm = Math.round(Math.abs((priceDeck[bestPrevDate].date - date)/8.64e7));
+  expPrice = priceDeck[bestPrevDate].price + diffDaysInterm * (priceDeck[bestNextDate].price - priceDeck[bestPrevDate].price) / diffDaysTotal;
+  return expPrice;
+}
+
+
+function returnAnnualIRR (declineOutput) {
+  //ror is calculated with undiscounted values
+  console.log("Calculating ROR with "+declineOutput.length +" days of data.");
+  cfdisctableBT = declineOutput.map(function(a) {return a.cfUndiscBtax;});
+  yearlyDiscBT = reduceAnnual(cfdisctableBT);
+  btror = IRR.apply(this, yearlyDiscBT);
+
+  cfdisctableAT = declineOutput.map(function(a) {return a.cfUndiscAtax;});
+  yearlyDiscAT = reduceAnnual(cfdisctableAT);
+  atror = IRR.apply(this, yearlyDiscAT);
+  return [btror*12, atror*12];
+}
+
+//present value
+function PV(rate, nper, fv) {
+  return fv * 1/(Math.pow(1+rate,nper));
+}
+
+//iterative process for IRR
+function seekZero (fn) {
+  var x = 1;
+  while (fn(x) > 0) {
+    x += 1;
+  }
+  while (fn(x) < 0) {
+    x -= 0.01
+  }
+  return x + 0.01;
+}
+
+// Internal Rate of Return (IRR)
+function IRR (cfs) {
+  var args = arguments;
+  function npv(rate) {
+    var rrate = (1 + rate/100);
+    var npv = args[0];
+    for (var i = 1; i < args.length; i++) {
+      npv += (args[i] / Math.pow(rrate, i));
+    }
+    return npv;
+  }
+  return (seekZero(npv) * 100) / 100;
+}
+
+function NPV (cfs) {
+  var npvbt = 0;
+  cfdisctableBT = cfs.map(function(a) {return a.cfDiscBtax;});
+  for (var i = 0; i < cfdisctableBT.length; i++) {
+    npvbt += cfdisctableBT[i];
+  }
+  var npvat = 0;
+  cfdisctableAT = cfs.map(function(a) {return a.cfDiscAtax;});
+  for (var i = 0; i < cfdisctableAT.length; i++) {
+    npvat += cfdisctableAT[i];
+  }
+  return [npvbt, npvat];
+}
+
+function reduceAnnual (dailyArr) { //reduces data to monthly data points, returnAnnualIRR multiples by 12 to get annual IRR
+  yearlyArr = [];
+  reducetimes = Math.floor(dailyArr.length/30);
+  for (var i = 0 ; i < reducetimes; i++ ) {
+    yearlyVal = 0;
+    for (var j = 0; j < 30; j++) {
+      yearlyVal += dailyArr[i*30+j];
+    }
+    yearlyArr.push(yearlyVal);
+  }
+  return (yearlyArr);
+}
+
+
+function addDays(date, days) {
+  var dat = new Date(date);
+  dat.setDate(dat.getDate() + days);
+  return dat;
+}
+
+
+function printcols(curve) {
+  for (var i = 0; i < 10; i++) {
+    //console.log("time: "+col_time[i]+", ntime: "+col_ntime[i].toFixed(2)+", rate: "+col_drate[i].toFixed(2));
+    console.log(curve[i]);
+
+  }
+}
+
+Number.prototype.formatMoney = function(c, d, t){
+var n = this,
+    c = isNaN(c = Math.abs(c)) ? 2 : c,
+    d = d == undefined ? "." : d,
+    t = t == undefined ? "," : t,
+    s = n < 0 ? "-" : "",
+    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
+    j = (j = i.length) > 3 ? j % 3 : 0;
+   return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+ };
